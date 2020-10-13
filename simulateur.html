@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<link href="style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<table id="container">
+			<thead>
+				<th colspan="3"><h1>Faites votre simulation</h2></td>
+			</thead>
+			<tbody>
+				<tr>
+					<td width="10%">Montant</td>
+					<td width="30%"><input class="number" type="text" name="montant" value=" 1000000" /> MAD</td>
+					<td width="60%">
+						<input class="range" type="range" name="montant-range" min="150000" max="10000000" value="1000000">
+						<div class="comment">
+							<span class="left-comment">150 000</span>
+							<span class="right-comment">10 000 000</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Taux</td>
+					<td><input type="text" class="number" name="taux" value="5" /> %</td>
+					<td>
+						<input class="range" type="range" name="taux-range" min="1" max="6.5" value="5">
+						<div class="comment">
+							<span class="left-comment">1</span>
+							<span class="right-comment">6,5</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Durée</td>
+					<td><input type="text" class="number" name="duree" value="180"/> Mois</td>
+					<td>
+						<input class="range" type="range" name="duree-range" min="60" max="300" value="180">
+						<div class="comment">
+							<span class="left-comment">60</span>
+							<span class="right-comment">300</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Différé</td>
+					<td><input type="text" class="number" name="differe" value="0" /> Mois</td>
+					<td>
+						<input class="range" type="range" name="differe-range" min="0" max="12" value="0">
+						<div class="comment">
+							<span class="left-comment">0</span>
+							<span class="right-comment">12</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Mensualité</td>
+					<td><input type="text" class="number" name="mensualite" value="8170.83"/> MAD</td>
+					<td>
+						<input class="range" type="range" name="mensualite-range" min="1" max="120000" value="8170.83">
+						<div class="comment">
+							<span class="left-comment">1</span>
+							<span class="right-comment">120 000</span>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"></td>
+					<td>
+						<input type="checkbox" /> Calculer la TVA (10%)
+					</td>
+				</tr>
+					<td colspan="2"></td>
+					<td>
+						<button class="button">Tableau d'amortissement</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
+		<script src="script.js"></script>
+	</body>
+</html>
